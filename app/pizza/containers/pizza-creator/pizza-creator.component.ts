@@ -4,8 +4,6 @@ import { PizzaService } from '../../pizza.service';
 
 import { Pizza, Topping } from '../../pizza.interface';
 
-import { Observable } from 'rxjs/Observable';
-
 @Component({
   selector: 'pizza-creator',
   styleUrls: ['pizza-creator.component.scss'],

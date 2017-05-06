@@ -27,7 +27,7 @@ If you'd like to run this project, just clone the repo, run `yarn install` follo
 
 ### On Windows:
 
-In order to `yarn start` you'll need to change the `"build:dev"` line to read:
+In order to `yarn start` you'll need to change the `"build:dev"` line in `package.json` to read:
 ```json
   "build:dev": "set NODE_ENV=development && webpack-dev-server --inline --hot",
 ```

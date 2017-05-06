@@ -42,10 +42,6 @@ export class PizzaFormComponent {
   @Input()
   toppings: Topping[];
 
-  ngOnChanges(changes: any) {
-    console.log(changes);
-  }
-
   @Output()
   add = new EventEmitter<FormGroup>();
 

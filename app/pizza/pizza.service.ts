@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Pizza, Topping } from './pizza.interface';
 
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
-
+import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/pluck';
 import 'rxjs/add/operator/distinctUntilChanged';
 
@@ -30,7 +30,7 @@ export class PizzaService {
   private subject = new BehaviorSubject<State>(state);
   store = this.subject.asObservable().distinctUntilChanged();
 
-  select(name: string) {
+  select<T>(name: string): Observable<T> {
     return this.store.pluck(name);
   }
 

@@ -31,8 +31,8 @@ import { Observable } from 'rxjs/Observable';
 })
 export class PizzaCreatorComponent {
 
-  pizzas$: Observable<Pizza[]> = this.pizzaService.select('pizzas');
-  toppings$: Observable<Topping[]> = this.pizzaService.select('toppings');
+  pizzas$ = this.pizzaService.select<Pizza[]>('pizzas');
+  toppings$ = this.pizzaService.select<Topping[]>('toppings');
 
   constructor(
     private pizzaService: PizzaService

@@ -1,0 +1,43 @@
+.pizza-selected {
+  padding: 0 30px 30px;
+  border-bottom: 1px solid #b8c8d0;
+  &__empty {
+    font-style: italic;
+  }
+  &__list {
+    border: 1px solid #b8c8d0;
+  }
+  &__item {
+    > div {
+      display: flex;
+      align-content: center;
+      > img {
+        width: 18px;
+        margin: 0 8px 0 0;
+      }
+    }
+    border-bottom: 1px solid #b8c8d0;
+    &:last-child {
+      border-bottom: 0;
+    }
+    position: relative;
+    padding: 10px;
+    button {
+      border-radius: 2px;
+      display: flex;
+      justify-content: center;
+      cursor: pointer;
+      outline: 0;
+      border: 0;
+      background: #d73a49;
+      width: 22px;
+      height: 22px;
+      position: absolute;
+      top: 11px;
+      right: 10px;
+      img {
+        width: 18px;
+      }
+    }
+  }
+}

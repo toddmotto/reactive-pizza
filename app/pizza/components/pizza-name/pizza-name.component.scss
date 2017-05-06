@@ -1,0 +1,22 @@
+.pizza-name {
+  padding: 30px;
+  input {
+    width: 100%;
+    border: 1px solid #b8c8d0;
+    padding: 10px 15px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #01699a;
+    outline: 0;
+  }
+}
+.error {
+  border-radius: 0 0 2px 2px;
+  background: #d73a49;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 13px;
+  margin: -1px 0 0;
+  position: relative;
+  font-weight: 500;
+}

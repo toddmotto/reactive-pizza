@@ -1,0 +1,40 @@
+.toppings-selector {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #b8c8d0;
+  &__item {
+    cursor: pointer;
+    background: #97c747;
+    color: #fff;
+    padding: 6px;
+    text-align: center;
+    font-weight: 500;
+    border-radius: 3px;
+    margin: 2px 0;
+    flex: 0 0 23%;
+    text-transform: uppercase;
+    font-size: 12px;
+    transition: all .2s ease-in-out;
+    &:hover,
+    &.active {
+      background: #68961b;
+    }
+    @media screen and (max-width: 550px) {
+      flex: 0 0 49%;
+      padding: 10px 0;
+    }
+  }
+}
+.error {
+  width: 100%;
+  border-radius: 2px;
+  background: #d73a49;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 13px;
+  margin: 0;
+  position: relative;
+  font-weight: 500;
+}

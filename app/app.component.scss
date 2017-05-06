@@ -1,0 +1,12 @@
+:host {
+  display: flex;
+  margin: 25px 0;
+  justify-content: center;
+  width: 100%;
+  @media screen and (max-width: 600px) {
+    margin: 10px 0;
+  }
+}
+.app {
+  max-width: 96%;
+}

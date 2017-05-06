@@ -1,0 +1,32 @@
+:host {
+  display: flex;
+  flex: 1 0 40%;
+  background: #0074ae;
+}  
+.pizza-list {
+  width: 100%;
+  border-left: 1px solid #b8c8d0;
+  padding: 30px;
+  h2 {
+    margin: -10px 0 20px;
+    text-align: center;
+    color: #fff;
+  }
+  div {
+    background: #035e8c;
+    border-radius: 3px;
+    margin: 5px 0;
+    padding: 10px;
+    color: #fff;
+    p {
+      margin: 0;
+      font-size: 14px;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    span {
+      font-size: 12px;
+      font-style: italic;
+    }
+  }
+}

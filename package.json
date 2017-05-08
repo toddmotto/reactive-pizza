@@ -4,8 +4,8 @@
   "author": "Ultimate Angular",
   "license": "MIT",
   "scripts": {
-    "build": "NODE_ENV=production webpack -p",
-    "build:dev": "NODE_ENV=development webpack-dev-server --inline --hot",
+    "build": "cross-env NODE_ENV=production webpack -p",
+    "build:dev": "cross-env NODE_ENV=development webpack-dev-server --inline --hot",
     "clean": "rimraf build",
     "start": "yarn run build:dev",
     "start:production": "yarn run clean && yarn run build",
@@ -50,6 +50,7 @@
     "@angular/router": "4.1.1",
     "angularfire2": "4.0.0-rc0",
     "core-js": "2.4.1",
+    "cross-env": "^4.0.0",
     "firebase": "^3.9.0",
     "reflect-metadata": "0.1.10",
     "rxjs": "5.3.0",

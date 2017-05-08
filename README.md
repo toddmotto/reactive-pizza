@@ -24,3 +24,10 @@ This is an application to demonstrate Angular's reactive forms with a component 
 # Installation
 
 If you'd like to run this project, just clone the repo, run `yarn install` followed by a `yarn start` and you're good to go.
+
+### On Windows:
+
+In order to `yarn start` you'll need to change the `"build:dev"` line in `package.json` to read:
+```json
+  "build:dev": "set NODE_ENV=development && webpack-dev-server --inline --hot",
+```

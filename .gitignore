@@ -1,5 +1,6 @@
 # Project
 .idea
+*.iml
 
 # Node
 node_modules
